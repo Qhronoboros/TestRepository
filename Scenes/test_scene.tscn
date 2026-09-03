@@ -2,19 +2,21 @@
 
 [ext_resource type="Material" uid="uid://o8pvagxk8ye5" path="res://Assets/standard_material_3d.tres" id="1_3dogw"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_6w285"]
+[sub_resource type="SphereMesh" id="SphereMesh_6w285"]
 material = ExtResource("1_3dogw")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_6w285"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_3dogw"]
 
 [node name="TestScene" type="Node3D" unique_id=1786420568]
 
 [node name="Node3D" type="Node3D" parent="." unique_id=2135296456]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=1964910414]
-mesh = SubResource("BoxMesh_6w285")
+mesh = SubResource("SphereMesh_6w285")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Node3D" unique_id=512107621]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/CharacterBody3D" unique_id=1074240080]
-shape = SubResource("BoxShape3D_6w285")
+shape = SubResource("SphereShape3D_3dogw")
+
+[node name="SecondNode3D" type="Node3D" parent="." unique_id=248243131]
