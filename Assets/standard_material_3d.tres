@@ -3,4 +3,5 @@
 [ext_resource type="Texture2D" uid="uid://bvtyptih5nppq" path="res://Assets/random_noise.jpg" id="1_q2kyy"]
 
 [resource]
+albedo_color = Color(1, 1, 0, 1)
 albedo_texture = ExtResource("1_q2kyy")
